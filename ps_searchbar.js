@@ -42,7 +42,7 @@ $(document).ready(function () {
             .fail(response);
         },
         select: function (event, ui) {
-            var url = ui.item.url;
+            var url = ui.item.canonical_url;
             window.location.href = url;
         },
     }).psBlockSearchAutocomplete("widget").addClass('searchbar-autocomplete');
